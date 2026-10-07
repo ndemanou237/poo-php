@@ -4,6 +4,11 @@ class Student {
     private $first_name;
     // $first_name = "shadow";
 
+    public function __construct($first_name) {
+        // $this->first_name = $first_name;
+        $this->setFirst_name($first_name);
+    }
+
     public function getfirst_name(): mixed {
         return $this->first_name;
     }
@@ -16,14 +21,14 @@ class Student {
 
     }
 
-    public function getAverageSocre(): void {
+    public function getAverageSocre(): mixed {
         return $this->calculateAverageScore();
     }
 }
 
-$student = new Student;
+$student = new Student("shadow");
 
-$student->setFirst_name("shadow");
+
 echo $student->getfirst_name();
 
 

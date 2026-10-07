@@ -26,7 +26,7 @@ class Student {
     }
 }
 
-$student = new Student("shadow");
+$student = new Student("shadowe");
 
 
 echo $student->getfirst_name();
